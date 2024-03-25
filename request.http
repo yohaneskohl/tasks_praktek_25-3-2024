@@ -1,0 +1,14 @@
+POST http://localhost:3000/tasks
+Content-Type: : 'application/json; charset=UTF-8'
+
+[
+  {
+    "title": "Task",
+    "description": "Deskripsi Tasks",
+    "due_date": "2024-03-30",
+    "is_completed": false,
+  }
+]
+
+### List All Resource
+GET http://localhost:3000/tasks
