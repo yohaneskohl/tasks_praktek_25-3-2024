@@ -1,14 +1,28 @@
-POST http://localhost:3000/tasks
-Content-Type: : 'application/json; charset=UTF-8'
+### Create Data
+POST http://localhost:8000/tasks
+Content-Type: application/json
 
-[
-  {
-    "title": "Task",
-    "description": "Deskripsi Tasks",
-    "due_date": "2024-03-30",
-    "is_completed": false,
-  }
-]
+{
+  "title": "Task",
+  "description": "Deskripsi Tasks",
+  "due_date": "2024-03-30",
+  "is_completed": false
+}
+
 
 ### List All Resource
-GET http://localhost:3000/tasks
+GET http://localhost:8000/tasks
+
+### Getting a resource
+GET http://localhost:8000/tasks/8
+
+### Updating a resource
+PUT http://localhost:8000/tasks/8
+Content-Type: application/json
+
+{
+  "title" : "Task Updated"
+}
+
+### Deleting a resource
+DELETE http://localhost:8000/tasks/12
